@@ -13,7 +13,7 @@
  
   <!-- Navbar -->
   <nav class="bg-gray-100 backdrop-blur-md shadow-md fixed w-full z-50">
-    <div class="max-w-7xl mx-auto px-4 px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 py-6 lg:px-8">
       <div class="flex justify-between h-16">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
@@ -69,49 +69,50 @@
       </h2>
 
       <!-- FORMULAIRE -->
-      <form class="space-y-5" id="form">
+     <form class="space-y-5" id="form">
 
-        <div>
-          <label class="block font-medium text-gray-700 mb-1">Votre nom</label>
-          <input type="text" id="nom" class="input" placeholder="Ex : jean paul">
-          <span id="erreurnom"></span>
-        </div>
+  <div>
+    <label class="block font-medium text-gray-700 mb-1">Votre nom</label>
+    <input type="text" id="nom" class="input" placeholder="Ex : jean paul">
+    <span id="erreurnom"></span>
+  </div>
 
-        <div>
-          <label class="block font-medium text-gray-700 mb-1">Votre numero de telephone</label>
-          <input type="tel" id="numero" class="input" placeholder="Ex : 650 00 00 00">
-           <br> 
-          <span id="erreurTelephone"></span>
-        </div>
+  <div>
+    <label class="block font-medium text-gray-700 mb-1">Votre numero de telephone</label>
+    <input type="tel" id="numero" class="input" placeholder="Ex : 650 00 00 00">
+    <span id="erreurTelephone"></span>
+  </div>
 
-        <div>
-          <label class="block font-medium text-gray-700 mb-1">Adresse de Livraison </label>
-          <input type="text" id="adresse"  class="input" placeholder="Quartier">
-          <span id="erreurAdresse"></span>
-        </div>
+  <div>
+    <label class="block font-medium text-gray-700 mb-1">Adresse de Livraison </label>
+    <input type="text" id="adresse"  class="input" placeholder="Quartier">
+    <span id="erreurAdresse"></span>
+  </div>
 
-        <div>
-          <label class="block font-medium text-gray-700 mb-1">Burgger</label>
-          <select  id="select" class="input">
-            <option value=""> Choisir un burger </option>
-            <option>Classic Burger</option>
-            <option>Cheese Burger</option>
-            <option>Chicken Burger</option>
-            <option>Vegan Burger</option>
-          </select>
-          <span id="erreurBurger"></span>
-        </div>
+  <div>
+    <label class="block font-medium text-gray-700 mb-1">Burger</label>
+    <select id="select" class="input">
+      <option value="">Choisir un burger</option>
+      <option>Classic Burger</option>
+      <option>Cheese Burger</option>
+      <option>Chicken Burger</option>
+      <option>Vegan Burger</option>
+    </select>
+    <span id="erreurBurger"></span>
+  </div>
 
-        <div>
-          <label class="block font-medium text-gray-700 mb-1">Quantité </label>
-          <input type="number" id="qte" min="1" value="1" required class="input"> 
-          <span id="erreurQte"></span>
-        </div>
+  <div>
+    <label class="block font-medium text-gray-700 mb-1">Quantité</label>
+    <input type="number" id="qte" min="1" value="1" class="input"> 
+    <span id="erreurQte"></span>
+  </div>
 
-       <button type="submit" class="w-full bg-red-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition-all">Confirmer la Commande
-        </button> 
+  <button type="button" onclick="validerFormulaire(event)" class="w-full bg-red-600 text-white py-3 rounded-lg text-lg font-semibold hover:bg-red-700 transition-all">
+    Confirmer la Commande
+  </button>
 
-      </form>
+</form>
+
     </div>
 
   </div>
